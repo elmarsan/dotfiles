@@ -50,4 +50,5 @@ return require('packer').startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'VonHeikemen/lsp-zero.nvim'
     use 'echasnovski/mini.starter'
+    use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim
 end)
