@@ -11,9 +11,10 @@ return require('packer').startup(function(use)
     -- telescope
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { { 'nvim-lua/plenary.nvim' } } }
 
+    -- themnes
+    use { 'nyoom-engineering/oxocarbon.nvim' }
     -- catppuccin
-    use({ 'catppuccin/nvim', as = 'catppuccin', config = function() vim.cmd('colorscheme catppuccin') end })
-
+    -- use({ 'catppuccin/nvim', as = 'catppuccin', config = function() vim.cmd('colorscheme catppuccin') end })
     -- rose-pine
     -- use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end })
 
@@ -50,5 +51,6 @@ return require('packer').startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'VonHeikemen/lsp-zero.nvim'
     use 'echasnovski/mini.starter'
-    use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim
+    use { "romgrk/barbar.nvim", requires = { "nvim-tree/nvim-web-devicons", "lewis6991/gitsigns.nvim" } } -- https://github.com/romgrk/barbar.nvim
+    use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
 end)

@@ -4,7 +4,6 @@ vim.opt.encoding="utf-8"
 
 -- lines
 vim.opt.nu = true
-vim.opt.scrolloff = 8
 
 -- indent
 vim.opt.tabstop = 4

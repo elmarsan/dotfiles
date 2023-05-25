@@ -9,4 +9,3 @@ require('Comment').setup({
         block = '<leader>b'
     }
 })
-
