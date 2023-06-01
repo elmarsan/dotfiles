@@ -59,5 +59,7 @@ end)
 lspconfig['gopls'].setup {}
 lspconfig['tsserver'].setup {}
 lspconfig['clangd'].setup {}
+lspconfig['docker_compose_language_service'].setup {}
+lspconfig['dockerls'].setup {}
 
 lsp.setup()
