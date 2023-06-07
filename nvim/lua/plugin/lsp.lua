@@ -56,7 +56,13 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set('n', '<space>f', vim.lsp.buf.format, bufopts)
 end)
 
-lspconfig['gopls'].setup {}
+lspconfig['gopls'].setup {
+    settings = {
+        gopls = {
+            buildFlags = {'-tags', 'integration'}
+        }
+    }
+}
 lspconfig['tsserver'].setup {}
 lspconfig['clangd'].setup {}
 lspconfig['docker_compose_language_service'].setup {}

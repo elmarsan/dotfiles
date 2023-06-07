@@ -205,6 +205,11 @@ _G.packer_plugins = {
     path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tree-sitter-dockerfile"] = {
+    loaded = true,
+    path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/tree-sitter-dockerfile",
+    url = "https://github.com/camdencheek/tree-sitter-dockerfile"
+  },
   ultisnips = {
     loaded = true,
     path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/ultisnips",
