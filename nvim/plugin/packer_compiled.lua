@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
     url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",

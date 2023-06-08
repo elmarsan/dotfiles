@@ -23,3 +23,5 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+-- mode
+vim.opt.showmode = false

@@ -1,7 +1,8 @@
 local setup, nvimtree = pcall(require, "nvim-tree")
 if not setup then return end
 
-vim.keymap.set('n', "<leader>e", ":NvimTreeToggle<CR>")
+vim.keymap.set('n', "<leader>tt", ":NvimTreeToggle<CR>")
+vim.keymap.set('n', "<leader>tf", ":NvimTreeFocus<CR>")
 vim.keymap.set("n", "<leader>rf", ":NvimTreeFindFile<CR>")
 
 -- disable netrw at the very start of your init.lua (strongly advised)
@@ -59,4 +60,7 @@ nvimtree.setup({
             },
         },
     },
+    filters = {
+        dotfiles = false
+    }
 })

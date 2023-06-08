@@ -54,4 +54,5 @@ return require('packer').startup(function(use)
     use { "romgrk/barbar.nvim", requires = { "nvim-tree/nvim-web-devicons", "lewis6991/gitsigns.nvim" } } -- https://github.com/romgrk/barbar.nvim
     use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
     use 'camdencheek/tree-sitter-dockerfile'
+    use 'f-person/git-blame.nvim'
 end)
