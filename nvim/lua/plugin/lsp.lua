@@ -7,7 +7,9 @@ lsp.ensure_installed({
     'gopls',
     'lua_ls',
     'tsserver',
-    'c'
+    'c',
+    'clangd',
+    'cmake-language-server'
 })
 
 -- Fix Undefined global 'vim'
@@ -66,6 +68,7 @@ lspconfig['gopls'].setup {
 }
 lspconfig['tsserver'].setup {}
 lspconfig['clangd'].setup {}
+lspconfig['cmake-language-server'].setup {}
 lspconfig['docker_compose_language_service'].setup {}
 lspconfig['dockerls'].setup {}
 
