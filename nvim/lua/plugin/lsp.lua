@@ -68,7 +68,7 @@ lspconfig['gopls'].setup {
 }
 lspconfig['tsserver'].setup {}
 lspconfig['clangd'].setup {}
-lspconfig['cmake-language-server'].setup {}
+-- lspconfig['cmake-language-server'].setup {}
 lspconfig['docker_compose_language_service'].setup {}
 lspconfig['dockerls'].setup {}
 
