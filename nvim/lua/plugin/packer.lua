@@ -55,4 +55,5 @@ return require('packer').startup(function(use)
     use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
     use 'camdencheek/tree-sitter-dockerfile'
     use 'f-person/git-blame.nvim'
+    use 'https://invent.kde.org/sdk/qml-lsp'
 end)

@@ -11,7 +11,8 @@ require 'nvim-treesitter.configs'.setup {
         "javascript",
         "typescript",
         "cpp",
-        "cmake"
+        "cmake",
+        "qmljs"
     },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)

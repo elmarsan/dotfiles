@@ -205,6 +205,11 @@ _G.packer_plugins = {
     path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["qml-lsp"] = {
+    loaded = true,
+    path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/qml-lsp",
+    url = "https://invent.kde.org/sdk/qml-lsp"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/elmarsan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
