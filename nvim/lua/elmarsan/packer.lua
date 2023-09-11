@@ -13,28 +13,22 @@ return require('packer').startup(function(use)
 
     -- themnes
     use { 'nyoom-engineering/oxocarbon.nvim' }
-    -- catppuccin
-    -- use({ 'catppuccin/nvim', as = 'catppuccin', config = function() vim.cmd('colorscheme catppuccin') end })
-    -- rose-pine
-    -- use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end })
 
     -- treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use "nvim-treesitter/nvim-treesitter-textobjects"
     use "nvim-treesitter/playground"
 
-    -- harpoon
-    use "ThePrimeagen/harpoon"
-
     use "mbbill/undotree"
     use "tpope/vim-fugitive"
 
-    -- icons
     use "nvim-tree/nvim-web-devicons"
-
-    -- lualine
     use "nvim-lualine/lualine.nvim"
-    use { "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } }
+    use {
+        "nvim-tree/nvim-tree.lua",
+        after = "nvim-web-devicons",
+        requires = "nvim-tree/nvim-web-devicons",
+    }
 
     use "rhysd/vim-clang-format"                -- https://github.com/rhysd/vim-clang-format
     use "fatih/vim-go"                          -- https://github.com/fatih/vim-go
@@ -48,12 +42,10 @@ return require('packer').startup(function(use)
     use "numToStr/Comment.nvim"                 -- https://github.com/numToStr/Comment.nvim
     use { "kylechui/nvim-surround", tag = "*" } -- https://github.com/kylechui/nvim-surround
     use 'L3MON4D3/LuaSnip'
-    use 'ryanoasis/vim-devicons'
     use 'VonHeikemen/lsp-zero.nvim'
     use 'echasnovski/mini.starter'
     use { "romgrk/barbar.nvim", requires = { "nvim-tree/nvim-web-devicons", "lewis6991/gitsigns.nvim" } } -- https://github.com/romgrk/barbar.nvim
     use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
     use 'camdencheek/tree-sitter-dockerfile'
     use 'f-person/git-blame.nvim'
-    use 'https://invent.kde.org/sdk/qml-lsp'
 end)

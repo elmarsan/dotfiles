@@ -25,3 +25,4 @@ vim.opt.incsearch = true
 
 -- mode
 vim.opt.showmode = false
+vim.opt.background = "dark"
