@@ -1,0 +1,10 @@
+live_config_reload = true
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 15
+
+[font.normal]
+family = "Jetbrains Mono"
