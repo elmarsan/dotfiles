@@ -5,8 +5,8 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- mason
-    --use { "williamboman/mason.nvim", run = ":MasonUpdate" }
-    -- require("mason").setup()
+    use { "williamboman/mason.nvim", run = ":MasonUpdate" }
+    require("mason").setup()
 
     -- telescope
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { { 'nvim-lua/plenary.nvim' } } }
