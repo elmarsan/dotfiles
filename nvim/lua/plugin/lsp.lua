@@ -9,7 +9,8 @@ lsp.ensure_installed({
     'tsserver',
     'c',
     'clangd',
-    'cmake-language-server'
+    'cmake-language-server',
+    'pylsp'
 })
 
 -- Fix Undefined global 'vim'
@@ -59,18 +60,25 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', bufopts)
 end)
 
+vim.g.go_def_mode = 'gopls'
+vim.g.go_info_mode = 'gopls'
 lspconfig['gopls'].setup {
     settings = {
         gopls = {
-            buildFlags = { '-tags', 'integration' }
+            buildFlags = { '-tags', 'integration' },
+            -- experimentalWorkspaceModule = true,
         }
     }
 }
 lspconfig['tsserver'].setup {}
-lspconfig['clangd'].setup {}
+lspconfig['clangd'].setup {
+    -- settings = {
+    --     
+    -- }
+}
 -- lspconfig['cmake-language-server'].setup {}
 lspconfig['docker_compose_language_service'].setup {}
 lspconfig['dockerls'].setup {}
-lspconfig['qmlls'].setup{}
+lspconfig['pylsp'].setup{}
 
 lsp.setup()
