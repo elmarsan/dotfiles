@@ -1,0 +1,14 @@
+
+live_config_reload: true
+
+env:
+  TERM: alacritty
+
+font:
+  normal:
+    family: Jetbrains Mono
+
+  size: 14
+
+cursor:
+  blinking: On
