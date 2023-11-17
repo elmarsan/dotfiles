@@ -4,7 +4,7 @@ live_config_reload = true
 TERM = "alacritty"
 
 [font]
-size = 28
+size = 13
 
 [font.normal]
 family = "Jetbrains Mono"
