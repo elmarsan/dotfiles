@@ -7,4 +7,7 @@ TERM = "alacritty"
 size = 13
 
 [font.normal]
-family = "Jetbrains Mono"
+family = "Hack Nerd Font"
+
+[font.bold]
+family = "Hack Nerd Font"
