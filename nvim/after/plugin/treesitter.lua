@@ -12,7 +12,8 @@ require 'nvim-treesitter.configs'.setup {
         "typescript",
         "cpp",
         "cmake",
-        "python"
+        "python",
+        "sql"
     },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
